@@ -5,6 +5,7 @@ import moment from 'moment';
 class RepoItem extends React.Component {
   render () {
     let repo = this.props.repo;
+    let time = moment(repo.updated_at).fromNow();
 
     return (<li className= "repo-name" >
       <a href={repo.html_url}>{repo.name}</a>
@@ -16,7 +17,7 @@ class RepoItem extends React.Component {
           {repo.forks_count}
         </p>
       </section>
-      <p>moment({repo.updated_at}).format()</p>
+      <p>{time}</p>
     </li>);
   }
 }

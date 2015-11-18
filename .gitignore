@@ -6,6 +6,8 @@ bower_components
 .bower-registry
 .bower-tmp
 
+# token
+src/js/jquery.js
 
 ### Node ###
 # Logs
@@ -67,4 +69,3 @@ Temporary Items
 
 # App specific
 dist/
-src/jquery.js
