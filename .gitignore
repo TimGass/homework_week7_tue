@@ -6,6 +6,9 @@ bower_components
 .bower-registry
 .bower-tmp
 
+# original
+original
+
 # token
 src/js/jquery.js
 
