@@ -5,7 +5,7 @@ import RepoItem from "./repoItem";
 class Repos extends React.Component {
   render () {
     if (!this.props.repos.length && !this.props.hasLoaded) {
-      return <div>Loading...</div>
+      return (<img src="../Assets/ajax-loader.gif" alt="loading..."/>);
     }
 
     this.props.repos.sort((a, b) => {
