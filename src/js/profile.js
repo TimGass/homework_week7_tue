@@ -46,11 +46,6 @@ class Profile extends React.Component {
      this.getProfile();
      this.getStarred();
      this.getOrgs();
-     setInterval(() => {
-     this.getProfile();
-     this.getStarred();
-     this.getOrgs();
-   }, 10000);
    }
 
   render () {

@@ -26,9 +26,6 @@ class Header extends React.Component {
 
  componentDidMount(){
    this.getProfile();
-   setInterval(() => {
-   this.getProfile();
- }, 10000);
  }
 
   render () {
