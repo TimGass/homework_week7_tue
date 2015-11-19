@@ -35,7 +35,7 @@ class Header extends React.Component {
     let profile = this.state.profile;
 
     if (!this.state.profile.length && !this.state.hasLoaded) {
-      return (<img className="loading" src="../Assets/ajax-loader.gif" alt="loading..."/>);
+      return (<img className="loading" src="Assets/ajax-loader.gif" alt="loading..."/>);
     }
 
     return (

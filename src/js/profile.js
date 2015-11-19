@@ -58,7 +58,7 @@ class Profile extends React.Component {
     let created = moment(profile.created_at).format("MMMM Do YYYY");
 
     if (!this.state.profile.length && !this.state.hasLoaded) {
-      return (<img className="loading" src="../Assets/ajax-loader.gif" alt="loading..."/>);
+      return (<img className="loading" src="Assets/ajax-loader.gif" alt="loading..."/>);
     }
 
     return (

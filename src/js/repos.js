@@ -32,7 +32,7 @@ class Repos extends React.Component {
 
   render () {
     if (!this.state.repos.length && !this.state.hasLoaded) {
-      return (<img className="loading" src="../Assets/ajax-loader.gif" alt="loading..."/>);
+      return (<img className="loading" src="Assets/ajax-loader.gif" alt="loading..."/>);
     }
 
     this.state.repos.sort((a, b) => {
