@@ -1,6 +1,10 @@
 @import "../../dist/bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../../dist/bower_components/neat/app/assets/stylesheets/neat";
 
+.loading{
+  @include outer-container(20%);
+}
+
 header{
   @include outer-container(100%);
   padding: 10px;
@@ -66,8 +70,7 @@ header{
 
     &:nth-of-type(5){
       text-align: left;
-      padding-right: 10px;
-      @include span-columns(.7);
+      @include span-columns(.6);
       @include omega(n);
 
       span{
@@ -76,16 +79,26 @@ header{
 
       span:last-of-type{
         font-size: 12px;
+        padding: 0px;
       }
     }
+  }
 
-    &:nth-of-type(6){
-      @include span-columns(1);
+    #reactHeader{
+      @include span-columns(.7);
+      float: left;
 
-      img{
-        @include span-columns(4);
+      a{
+        @include span-columns(12);
+
+        img{
+          @include span-columns(8);
+        }
+
+        span{
+          @include span-columns(4);
+        }
       }
-    }
   }
 
   img{
@@ -235,7 +248,7 @@ main{
 
   }
 
-  section.profile{
+  #profile{
     @include span-columns(3);
     @include omega(1);
     font-size: 12px;
